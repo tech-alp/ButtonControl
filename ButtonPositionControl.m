@@ -213,7 +213,7 @@ classdef ButtonPositionContor < matlab.apps.AppBase
                     j = 0;
                     
                     while(i<1000)
-                        if(app.Stop)
+                        if(app.Stop)   %if click the disconnect trigged button, then loop is breaked. 
                             break;
                         end
                         byte = app.arduino.BytesAvailable;
